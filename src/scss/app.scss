@@ -65,6 +65,8 @@ hr{
     margin: 0 auto;
 }
 
+
+
 // ГЛАВНАЯ ЧАСТЬ
 
 .main{
@@ -359,6 +361,161 @@ hr{
     }
 }
 
+
+@media (max-width: 320px) {
+    h2{
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+    
+    h3{
+        font-family: "Shanti", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    
+    p{
+        font-family: "Arsenal", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10px;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        margin-left: 10px;
+        margin-right: 10px;
+
+        h1{
+            font-size: 20px;
+        }
+
+        &__block { 
+            text-align: left;
+            display: block;
+            &_aboutUs {
+                margin-top: 8px;
+                width: 289px;
+                height: 224px;
+                // width: 100%; 
+                text-align: center;
+                height: auto;
+                line-height: 17px;
+            }
+
+            &_spec{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+                align-items: start;
+                &_title{
+                    // text-align: left;
+                    color: white;
+                }
+            }
+        }
+        .text-content{
+            text-align: left;
+        }
+
+        &__serv { 
+
+            margin-top: 50px;
+            display: block; 
+
+            &_services{
+                width: 300px;
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0px;
+                :nth-child(2){
+                    display: block;
+                    padding-top: 30px;
+                }
+            }
+        }
+        &__reviews { /* Замените "имя_родительского_блока" на фактическое имя родительского блока */
+            display: block; /* Убираем flex */
+            margin-top: 40px;
+            &_top{
+                &_block{
+                    // margin-left: 30px;
+                    // margin-right: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    button{
+                        padding: 12px 9px 12px 9px;
+
+                        h3{
+                            padding-top: 0px;
+                            padding-left: 5px;
+                            :last-of-type{
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                    // :not(:last-child){
+                    //     display: none;
+                    // }
+
+                    // :nth-of-type(even){
+                    //     background-color: #AD6BDF;
+                    // }
+                }
+                hr{
+                    // align-self: center;
+                    margin-left: 116px;
+                    width: 452px;
+                    // display: none;  
+                }
+            }
+    
+            &_bottom{
+                margin-top: 20px;
+                margin-left: 0px;
+                line-height: 25px;
+                .section{
+                    margin-top: 40px;
+                    // display: block;
+                    display: flex;
+                    gap: 35px;
+                    // align-items: flex-start;
+                    img{
+                        width: 103px;
+                        height: 102px;
+                        // display: none;
+                    }
+                    h3{
+                        font-size: 20px;
+                        margin-top: 0px;
+                        margin-bottom: 7px;
+
+                    }
+                    hr{   
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 .specialists { 
     
     width: 542px;
@@ -402,6 +559,62 @@ hr{
       font-size: 16px;
     }
   }
+
+
+
+  @media (max-width:320px) {
+
+    .specialists { 
+        margin-left: -20px;
+        width: 320px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        padding: 0;
+        color: white;
+        overflow: hidden;
+      
+        &_card { padding-left: 10px;
+          margin-top: 0px;
+          padding-bottom: 0px;
+          display: flex;
+        //   flex-direction: row;
+        //   text-align: center;
+          width: 100%;
+        }
+      
+        &_image { 
+          padding-top: 5px;
+          padding-bottom: 5px;
+          width: 23px;
+        }
+      
+        &_info { 
+            padding: 0;
+            padding-left: 16px;
+            display: flex;
+        }
+      
+        &_title {
+          width: 74px;
+          margin-top: 10px;
+          padding-left: 0px;
+          margin-bottom: 5px;
+        }
+      
+        &_description { 
+          margin-top: 10px;
+          padding-left: 51px;
+          white-space: nowrap;
+          font-size: 10px;
+        }
+      }
+    
+    
+  }
+
+
+
 
 // @media (max-width: 768px) {
 //     .specialists-container {
@@ -549,4 +762,5 @@ hr{
         }
     }
 }
+
 
