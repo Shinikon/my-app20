@@ -1,4 +1,4 @@
-import logoSvg from '../assets/img/logo.svg';
+import logoSvg from '/assets/img/logo.svg';
 import '../scss/components/_header.scss';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +8,8 @@ function Header() {
       <div className="container">
         <Link to="/" >
           <div className="header__logo">
-            <img width="58" height="73" src={logoSvg} alt="logo" />
+            {/* <img  src={logoSvg} alt="logo" /> */}
+            <img width="58" height="73" src="" alt="Logo" />
             <div>
               <h2>Vertex Visions</h2>
             </div>
