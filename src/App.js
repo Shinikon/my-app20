@@ -13,9 +13,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/"> {/* Измените здесь на "/" */}
       <div className="App">
-        <h1>Hello, world!</h1>  {/*  Убедитесь, что этот текст есть */}
+        <h1>Hello, world!</h1>
         <Header />
         <Banner />
         <Routes>
