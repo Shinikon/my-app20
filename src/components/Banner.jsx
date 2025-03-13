@@ -11,6 +11,7 @@ function Banner() {
         <div className="banner__container">
             <div className='banner__container_portal'>
                 <img  src="/assets/img/bannerportal.svg" alt="banner" />
+                advlksdm klv sdlkbms
             </div>
             <div className='banner__container_box'>
                 <div className="banner__container_box_title">
