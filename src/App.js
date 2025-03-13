@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
-        <h1>Hello, world!</h1>  {/*  Добавьте этот текст */}
+        <h1>Hello, world!</h1>  {/*  Убедитесь, что этот текст есть */}
         <Header />
         <Banner />
         <Routes>
