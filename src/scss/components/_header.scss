@@ -1,8 +1,17 @@
-
+h2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
 
 .header {
-  margin-top: -35px;
-  padding: 40px 0;
+  // margin-top: -35px;
+  // padding: 40px 0;
   margin-left: 60px;
   margin-right: 56px;
 
@@ -23,8 +32,6 @@
     h2{
       margin-top: 15px;
       color: white;
-      font-family: "Montserrat" sans-serif;
-      font-style: 36px;
       text-decoration: none;
     }
   }
@@ -58,9 +65,7 @@
 
   &__logo  {
     display: flex;
-    h2{
-      width: 200px;
-    }
+
 
 
     img {
@@ -70,10 +75,11 @@
     }
 
     h2{
+      width: 200px;
       margin-top: 0px;
       color: white;
       font-family: "Montserrat" sans-serif;
-      font-style: 36px;
+      font-size: 24px;
     }
   }
   &__nav {
@@ -84,13 +90,65 @@
     margin-left: 80px;
 
 
-    li, a{
-        color: white;
-        margin-right: 15px; 
-        // font-family: "Shanti" sans-serif;
-        font-size: 24px;
-        text-decoration: none;
+      li, a{
+          color: white;
+          margin-right: 15px; 
+          // font-family: "Shanti" sans-serif;
+          font-size: 24px;
+          text-decoration: none;
+      }
     }
   }
 }
+
+
+@media (max-width: 320px) {
+  .header {
+    margin-left: 5px;
+    margin-right: 10px;
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &__logo  {
+      display: flex;
+      h2{
+        margin-left: -10px;
+        width: 167px;
+      }
+  
+  
+      img {
+        width: auto;
+        height: 49px;
+        margin-right: 10px;
+      }
+  
+      h2{
+        margin-top: 0px;
+        color: white;
+        font-family: "Montserrat" sans-serif;
+      }
+    }
+    &__nav {
+      display: none;
+      // list-style: none;
+      // margin: 0;
+      // padding: 0;
+      // margin-left: 80px;
+  
+  
+      //   li, a{
+      //       color: white;
+      //       margin-right: 15px; 
+      //       // font-family: "Shanti" sans-serif;
+      //       font-size: 24px;
+      //       text-decoration: none;
+      //   }
+      }
+    }
+  
 }
