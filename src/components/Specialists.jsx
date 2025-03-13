@@ -7,6 +7,7 @@ const prepareData = (data, repeatCount) => {
   for (let i = 0; i < repeatCount; i++) {
     repeatedData.push(...data.map((item, index) => ({
       ...item,
+      id: `${item.id}_${i}`, // Создаем уникальный ключ
       isLast: (i === repeatCount - 1) && (index === data.length - 1),
     })));
   }
@@ -22,11 +23,11 @@ const Specialists = () => {
   }
 
   return (
-    <div className="specialists"> {/* Корневой контейнер */}
+    <div className="specialists">
       {preparedData.map((specialist) => (
         <div
           className="specialists_card"
-          key={specialist.id}
+          key={specialist.id} // Используем новый, уникальный ключ
           style={{ borderBottom: specialist.isLast ? 'none' : '1px solid white' }}
         >
           <img
