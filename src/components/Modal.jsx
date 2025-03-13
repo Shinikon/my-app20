@@ -1,7 +1,7 @@
 // Modal.jsx
 import React from 'react';
 import '../scss/components/_modal.scss';
-import closeIcon from '../assets/img/close.svg';
+// import closeIcon from '/assets/img/close.svg';
 
 
 const Modal = ({ isOpen, onClose, children }) => {
@@ -10,7 +10,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       <div className="modal-overlay">
         <div className="modal">
           <button className="modal-close-button" onClick={onClose}>
-            <img src={closeIcon} alt="Закрыть" />
+            <img src="/assets/img/close.svg" alt="Закрыть" />
           </button>
           {children}
         </div>

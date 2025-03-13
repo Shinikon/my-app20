@@ -2,7 +2,7 @@ import '../scss/app.scss';
 import '../scss/components/_buttons.scss';
 import React, { useState } from 'react';
 import ButtonGroup from '../components/ButtonGroup'
-import box from '../assets/img/plastic.svg';
+// import box from '/assets/img/plastic.svg';
 
 function Order() {
 
@@ -34,7 +34,7 @@ function Order() {
           </div>
           <div className="img">
           <div className="background-image-container">
-                <img src={box} alt="Background Image" className="background-image" />
+                <img src="'/assets/img/plastic.svg'" alt="Background Image" className="background-image" />
           </div>
           </div>
           <div className="block"

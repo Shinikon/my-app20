@@ -1,6 +1,6 @@
-import spec1 from '../assets/img/specPortf1.svg'
-import spec2 from '../assets/img/specPortf2.svg'
-import spec3 from '../assets/img/specPortf3.svg'
+// import spec1 from '/assets/img/specPortf1.svg'
+// import spec2 from '/assets/img/specPortf2.svg'
+// import spec3 from '/assets/img/specPortf3.svg'
 
 function Portfolio() {
     return (
@@ -15,7 +15,7 @@ function Portfolio() {
           <div className="portfolio__spec">
             <div className="section">
               <div>
-                <img src={spec1} />
+                <img src="/assets/img/specPortf1.svg" />
               </div>
               <div>
                 <h3>@Shinka4u</h3>
@@ -28,7 +28,7 @@ function Portfolio() {
             
             <div className="section">
               <div>
-                <img src={spec2} />
+              <img src="/assets/img/specPortf2.svg" />
               </div>
               <div>
                 <h3>@Shinka4u</h3>
@@ -41,7 +41,7 @@ function Portfolio() {
             
             <div className="section">
               <div>
-                <img src={spec3} />
+              <img src="/assets/img/specPortf3.svg" />
               </div>
               <div>
                 <h3>@Shinka4u</h3>

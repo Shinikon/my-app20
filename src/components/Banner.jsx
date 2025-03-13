@@ -1,8 +1,8 @@
 import '../scss/components/_banner.scss'
 import '../scss/components/_buttons.scss'
-import portal from '../assets/img/bannerportal.svg'
-import tg from '../assets/img/Telegram.svg'
-import vk from '../assets/img/Vk.svg'
+// import portal from '/assets/img/bannerportal.svg'
+// import tg from '/assets/img/Telegram.svg'
+// import vk from '/assets/img/Vk.svg'
 
 function Banner() {
 
@@ -10,7 +10,7 @@ function Banner() {
     <div className='banner'>
         <div className="banner__container">
             <div className='banner__container_portal'>
-                <img  src={portal} alt="banner" />
+                <img  src="/assets/img/bannerportal.svg" alt="banner" />
             </div>
             <div className='banner__container_box'>
                 <div className="banner__container_box_title">
@@ -25,13 +25,13 @@ function Banner() {
                 <div className='banner__container_box_btns'>
                     <button className="banner__container_box_btns_social">
                         {/* <div> */}
-                            <img src={tg} alt="Telegram"  className="banner__container_box_btns_social_img" />
+                            <img src="/assets/img/Telegram.svg" alt="Telegram"  className="banner__container_box_btns_social_img" />
                         {/* </div> */}
                         <h3>@Shinka4u</h3>
                     </button>
                     <button className="banner__container_box_btns_social">
                         {/* <div> */}
-                            <img src={vk} alt="Vkontakte"  className="banner__container_box_btns_social_img" />
+                            <img src="/assets/img/Vk.svg" alt="Vkontakte"  className="banner__container_box_btns_social_img" />
                         {/* </div> */}
                         <h3>VertexVisions.id</h3>
                     </button>

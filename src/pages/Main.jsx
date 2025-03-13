@@ -8,18 +8,18 @@ import Specialists from '../components/Specialists';
 import '../scss/components/_buttons.scss';
 
 
-import box from '../assets/img/plastic.svg';
-import rev1 from '../assets/img/rev1.svg'
-import rev2 from '../assets/img/rev2.svg'
-import rev3 from '../assets/img/rev3.svg'
+// import box from '/assets/img/plastic.svg'
+// import rev1 from '/assets/img/rev1.svg'
+// import rev2 from '/assets/img/rev2.svg'
+// import rev3 from '/assets/img/rev3.svg'
 
-import mod1 from '../assets/img/arch.svg'
-import mod2 from '../assets/img/game.svg'
-import mod3 from '../assets/img/hr.svg'
-import mod11 from '../assets/img/arch1.svg'
-import mod21 from '../assets/img/game1.svg'
-import mod31 from '../assets/img/hr1.svg'
-import add from "../assets/img/addFile.svg"
+// import mod1 from '/assets/img/arch.svg'
+// import mod2 from '/assets/img/game.svg'
+// import mod3 from '/assets/img/hr.svg'
+// import mod11 from '/assets/img/arch1.svg'
+// import mod21 from '/assets/img/game1.svg'
+// import mod31 from '/assets/img/hr1.svg'
+// import add from "/assets/img/addFile.svg"
 
 function Main() {
 
@@ -27,7 +27,7 @@ function Main() {
     <div className="review-modal">
       <div className="review-file-upload" onClick={() => document.getElementById('fileInput').click()}>
            <span> <h2>Прикрепить файл</h2>
-           <img src={add} alt="" /></span>
+           <img src="/assets/img/addFile.svg" alt="" /></span>
 
           <input type="file" id="fileInput" />
       </div>
@@ -72,7 +72,7 @@ function Main() {
           <div className="main__block_aboutUs">
             <div>
               <div className="main__background-image-container">
-                <img src={box} alt="Background Image" className="main__background-image" />
+                <img src="/assets/img/plastic.svg" alt="Background Image" className="main__background-image" />
               </div>
               <div className="text-content">
                 <p>
@@ -97,10 +97,10 @@ function Main() {
 
           <section className="main__serv_services">
             <ModalTrigger 
-              children={<img src={mod1} alt="Архитектура" />}
+              children={<img src="/assets/img/arch1.svg" alt="Архитектура" />}
               modalContent={
                 <div className="modal-content-wrapper">
-                  <img src={mod11} alt="Архитектура" />
+                  <img src="/assets/img/arch1.svg" alt="Архитектура" />
                   <div className="modal-text-content"
                   style={{
                     gap:'0px'
@@ -131,10 +131,10 @@ function Main() {
 
             <div>
               <ModalTrigger
-                children={<img src={mod2} alt="Игры" />}
+                children={<img src="/assets/img/game.svg" alt="Игры" />}
                 modalContent={
                   <div className="modal-content-wrapper">
-                    <img src={mod21} alt="Игры" />
+                    <img src="/assets/img/game1.svg" alt="Игры" />
                     <div className="modal-text-content">
                       <h1>3D-модели для видеоигр</h1>
                       <p>
@@ -161,10 +161,10 @@ function Main() {
               />
 
                 <ModalTrigger
-                  children={<img src={mod3} alt="HR" />}
+                  children={<img src="/assets/img/hr.svg" alt="HR" />}
                   modalContent={
                     <div className="modal-content-wrapper">
-                      <img src={mod31} alt="HR" />
+                      <img src="/assets/img/hr1.svg" alt="HR" />
                       <div className="modal-text-content">
                         <h1>3D-модели для видеоигр</h1>
                         <p>
@@ -223,7 +223,7 @@ function Main() {
           <div className="main__reviews_bottom">
             <div className="section">
               <div>
-                <img src={rev1} />
+                <img src="/assets/img/rev1.svg" />
               </div>
               <div>
                 <h3>SatisfiedCustomer</h3>
@@ -234,7 +234,7 @@ function Main() {
 
             <div className="section">
               <div>
-                <img src={rev2} />
+                <img src="/assets/img/rev2.svg" />
               </div>
               <div>
                 <h3>𝖺𝗋𝖾𝗄𝗎𝗌𝗁𝗂𝗌𝗎_11</h3>
@@ -245,7 +245,7 @@ function Main() {
 
             <div className="section">
               <div>
-                <img src={rev3} />
+                <img src="/assets/img/rev3.svg" />
               </div>
               <div>
                 <h3>yerilet</h3>
